@@ -61,11 +61,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Search Exercises"
           type="text"
+          className="demo"
         />
         <Button
           className="search-btn"
           sx={{
-            bgcolor: "#FF2625",
+            bgcolor: "#06dbfe",
             color: "#fff",
             textTransform: "none",
             width: { lg: "173px", xs: "80px" },
@@ -74,6 +75,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             right: "0px",
             fontSize: { lg: "20px", xs: "14px" },
           }}
+          border="none"
+          outline="none"
           onClick={handleSearch}
         >
           Search

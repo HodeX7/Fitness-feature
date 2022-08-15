@@ -1,6 +1,26 @@
 body {
   font-family: "Josefin Sans";
-  background-color: #fffafb;
+  background: hsla(172, 85%, 74%, 1);
+  background: linear-gradient(
+    45deg,
+    hsla(172, 85%, 74%, 1) 0%,
+    hsla(225, 60%, 67%, 1) 42%,
+    hsla(319, 74%, 64%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(172, 85%, 74%, 1) 0%,
+    hsla(225, 60%, 67%, 1) 42%,
+    hsla(319, 74%, 64%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(172, 85%, 74%, 1) 0%,
+    hsla(225, 60%, 67%, 1) 42%,
+    hsla(319, 74%, 64%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#83f5e5", endColorstr="#7A93DE", GradientType=1 );
+  color: #fff;
 }
 
 * {
@@ -22,7 +42,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ff2625;
+  color: #8e44ad;
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
@@ -65,7 +85,7 @@ body {
   width: 400px;
   height: 445px;
   background: #fff;
-  border-top: 4px solid #ff2625;
+  border-top: 4px solid #8e44ad;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -90,9 +110,16 @@ body {
   transform: scale(1.1, 1.1);
 }
 
+.demo:focus {
+  border: none;
+  outline: none;
+}
+
 .search-btn:hover {
-  color: #ff2625 !important;
-  border: 1px solid #ff2625 !important;
+  color: #8e44ad !important;
+  border: 1px solid #8e44ad !important;
+  border: none;
+  outline: none;
 }
 
 .exercise-video {

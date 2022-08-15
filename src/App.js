@@ -6,6 +6,7 @@ import "./App.css";
 import ExerciseDetail from "./pages/ExerciseDetail";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import BMI from "./components/BMI";
 
 const App = () => (
   <Box width="400px" sx={{ width: { xl: "1488px" } }} m="auto">
@@ -13,6 +14,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/exercise/:id" element={<ExerciseDetail />} />
+      <Route path="/bmi" element={<BMI />} />
     </Routes>
   </Box>
 );
