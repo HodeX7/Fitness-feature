@@ -41,6 +41,24 @@ const Navbar = () => {
         >
           BMI
         </Link>
+        <Link
+          to="/premium"
+          style={{
+            textDecoration: "none",
+            color: "#fff",
+          }}
+        >
+          Premium
+        </Link>
+        {/* <Link
+          to="/nutritiontracker"
+          style={{
+            textDecoration: "none",
+            color: "#fff",
+          }}
+        >
+          Nutrition Tracker
+        </Link> */}
       </Stack>
     </Stack>
   );
